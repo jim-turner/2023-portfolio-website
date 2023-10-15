@@ -1,0 +1,117 @@
+
+
+html,
+body {
+    margin: 20px;
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+    border: 1px solid black;
+    /* 1px solid black border */
+    overflow: hidden;
+    /* Prevent scrolling */
+    font-family: 'Montserrat', sans-serif;
+    /* z-index: 2; */
+
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 48px;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-weight: 100;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+
+}
+
+.menu {
+    position: fixed;
+    top: 240px;
+    left: 80px;
+    width: 200px;
+    /* Set the width of the menu */
+    height: 100vh;
+    /* Full height of the viewport */
+
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    width: 20px;
+    /* Fixed width for the menu items */
+    height: 20px;
+    /* Fixed height for the menu items */
+    padding: 5px;
+    text-align: left;
+    position: relative;
+    font-weight: bold;
+}
+
+.menu ul li a {
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li.clicked a {
+    color: transparent;
+    /* Hides link text */
+    justify-content: center;
+    background-color: rgb(84, 84, 84);
+    border-radius: 50%;
+}
+
+.menu ul li.clicked a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2.5px;
+    /* Half of the previous circle width */
+    height: 2.5px;
+    /* Half of the previous circle height */
+    border-radius: 50%;
+    background-color: rgb(33, 33, 33);
+}
+
+span {
+
+    display: block;
+    text-align: left;
+    bottom: 0;
+    margin-right: 20px;
+    font-weight: bold;
+
+}
+
+.home_aboutme {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 60px;
+    margin-bottom: 60px;
+
+
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    /* Set a higher z-index for the container */  
+}
+
+
+
