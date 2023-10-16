@@ -4,74 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="open_title_style.css">
     <title>Jim Turner Studio</title>
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="content">
-
-            <h1>Jim Turner</h1>
-            <h4>Designer & Developer</h4>
-        </div>
-
-        <div class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Info</a></li>
-                <li><a href="https://jimturnerstudio.notion.site/Contact-d790b8c000b246f9b9080a25acd78ab3?pvs=4">Contact</a></li>
-            </ul>
-        </div>
-
-        <div class="home_aboutme">
-            <p>
-                <span>Born in 1963</span>
-                <span>in Montreal, Canada</span>
-                <span>I believe</span>
-                <span>web design</span>
-                <span>can be more</span>
-                <span>diverse and inspiring.</span>
-                <span>With a mission</span>
-                <span>to present</span>
-                <span>the possiblilites</span>
-                <span>of web design,</span>
-                <span>I am pursuing</span>
-                <span>new expressions</span>
-                <span>through experiments.</span>
-            </p>
-        </div>
+    <div class="center">
+        <h1 id="title">Jim Turner Portfolio</h1>
     </div>
 
-    <script id="vertexShader" type="x-shader/x-vertex">
-        void main() {
-            gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
-        }
-    </script>
-    
-    <script id="fragmentShader" type="x-shader/x-fragment">
-        uniform float uTime;
-    
-        void main() {
-            vec3 color = vec3(abs(sin(uTime * 3.0)));
-            gl_FragColor = vec4(color, 0.1); // 10% opacity
-        }
-    </script>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="script.js"></script>
-
+    <script src="open_title_script.js"></script>
 </body>
 
 </html>
