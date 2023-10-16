@@ -3,6 +3,7 @@
 html,
 body {
     padding: 20px;
+    margin: 0;
     height: 100%;
     box-sizing: border-box;
     border: 1px solid black;
@@ -14,12 +15,14 @@ body {
 }
 
 h1 {
+    
     font-weight: 100;
     font-size: 48px;
     margin-bottom: 0;
 }
 
 h4 {
+    
     font-weight: 100;
     font-size: 16px;
     padding: 0;
@@ -30,7 +33,7 @@ h4 {
 .menu {
     position: fixed;
     top: 240px;
-    left: 80px;
+    left: 40px;
     width: 200px;
     /* Set the width of the menu */
     height: 100vh;
@@ -66,19 +69,19 @@ h4 {
     color: transparent;
     /* Hides link text */
     justify-content: center;
-    background-color: rgb(84, 84, 84);
-    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20%;
 }
 
 .menu ul li.clicked a::after {
     content: "";
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 2.5px;
+    /* top: 20%;
+    left: 20%; */
+    /* transform: translate(-50%, -50%); */
+    /* width: 2.5px; */
     /* Half of the previous circle width */
-    height: 2.5px;
+    /* height: 2.5px; */
     /* Half of the previous circle height */
     border-radius: 50%;
     background-color: rgb(33, 33, 33);
@@ -98,8 +101,8 @@ span {
     position: fixed;
     bottom: 0;
     right: 0;
-    margin-right: 60px;
-    margin-bottom: 50px;
+    margin-right: 30px;
+    margin-bottom: 30px;
 
 
 }
