@@ -2,17 +2,14 @@
 
 html,
 body {
-    margin: 20px;
     padding: 20px;
     height: 100%;
     box-sizing: border-box;
-    /* Include padding and border in the element's total width and height */
     border: 1px solid black;
-    /* 1px solid black border */
     overflow: hidden;
     /* Prevent scrolling */
     font-family: 'Montserrat', sans-serif;
-    /* z-index: 2; */
+    background-color: rgb(217, 216, 217);
 
 }
 
@@ -102,16 +99,11 @@ span {
     bottom: 0;
     right: 0;
     margin-right: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 
 
 }
 
-.container {
-    position: relative;
-    z-index: 1;
-    /* Set a higher z-index for the container */  
-}
 
 
 
