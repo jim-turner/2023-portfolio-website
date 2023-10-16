@@ -2,66 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/skills_style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
-
-
-    <title>Jim Turner Studio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/skills_style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap"
+    rel="stylesheet">
+  <title>Jim Turner Studio</title>
 </head>
 
 <body>
+  <header class="siteHeader" id="SiteHeader" x-data>
+    <h1 class="siteHeader_title"><a href="index.html" x-data x-bind="textBtn">jim Turner</a></h1>
+    <div class="siteHeader_desc">Photographer Portfolio</div><button class="siteHeader_menuBtn" type="button"
+      aria-label="Menu" x-data x-bind="menuBtn">
+      <div class="shape">
+        <div class="line line-top"></div>
+        <div class="line line-center"></div>
+        <div class="line line-bottom"></div>
+      </div>
+    </button>
+  </header>
+  <nav class="siteNavi" id="SiteNavi" x-data style="display:none; opacity:0;">
+    <div class="siteNavi_bg"></div><button class="siteNavi_close" type="button" x-bind="menuCloseBtn">
+      <div class="shape"></div>
+    </button>
 
-    
-    <header class="siteHeader" id="SiteHeader" x-data>
-        <h1 class="siteHeader_title"><a href="index.html" x-data x-bind="textBtn">jim Turner</a></h1>
-        <div class="siteHeader_desc">Photographer Portfolio</div><button class="siteHeader_menuBtn" type="button" aria-label="Menu" x-data x-bind="menuBtn">
-          <div class="shape">
-            <div class="line line-top"></div>
-            <div class="line line-center"></div>
-            <div class="line line-bottom"></div>
-          </div>
-        </button>
-      </header>
-      <nav class="siteNavi" id="SiteNavi" x-data style="display:none; opacity:0;">
-        <div class="siteNavi_bg"></div><button class="siteNavi_close" type="button" x-bind="menuCloseBtn">
-          <div class="shape"></div>
-        </button>
-        <div class="siteNavi_content">
-          <ol class="siteNavi_pages">
-            <li class="siteNavi_pageItem siteNavi_pageItem-1"><a href="index.html" x-bind="textBtn">
-                <div class="inner">
-                  <div class="index">P1</div>
-                  <div class="title">Photo</div>
-                  <div class="text">37 projects</div>
-                </div>
-              </a></li>
-            <li class="siteNavi_pageItem siteNavi_pageItem-2"><a href="movie/index.html" x-bind="textBtn">
-                <div class="inner">
-                  <div class="index">P2</div>
-                  <div class="title">Movie</div>
-                  <div class="text">22 projects</div>
-                </div>
-              </a></li>
-            <li class="siteNavi_pageItem siteNavi_pageItem-3"><a href="info/index.html" x-bind="textBtn">
-                <div class="inner">
-                  <div class="index">P3</div>
-                  <div class="title">Info</div>
-                </div>
-              </a></li>
-          </ol>
-          <p class="siteNavi_cr"><span>&copy;</span><span>2023</span><span>yansuKIM</span></p>
-        </div>
-
-    
-
-
-    
     <script src="js/skills_script.js"></script>
 
 </body>
