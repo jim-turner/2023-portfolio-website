@@ -1,203 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(202, 78, 78);
+}
 
-  
-  * {
-    margin-top: 0;
-    padding: 0
-  }
-  
-  
-  main, canvas {
-    display: block
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font: inherit
-  }
-  
-  a {
-    color: inherit;
-    text-decoration: none
-  }
-  
-  ol, ul {
-    list-style: none
-  }
-  
-  input, button, select, textarea {
-    appearance: none;
-    border: none;
-    border-radius: 0;
-    background: none;
-    outline: none;
-    color: inherit;
-    font-family: inherit
-  }
-  
-  :root {
-    --c-black: #222;
-    --c-bg: hsl(0deg, 0%, 90%);
-    --c-bg-hover: hsl(0deg, 0%, 85%);
-    --c-border: rgba(34, 34, 34, 0.25);
-    --fs-text: 16px;
-    --fs-text-lg: 24px;
-    --fs-text-jp: 13px
-  }
-  
-  html.no-scroll {
-    overflow: hidden
-  }
-  
-  body {
-    background-color: var(--c-bg);
-    color: var(--c-black);
-    font-family: garamond-premier-pro, serif;
-    font-weight: 500;
-    font-size: var(--fs-text);
-    font-feature-settings: "palt";
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    overscroll-behavior: none
-  }
-  
-  body.no-cursor {
-    cursor: none
-  }
-  
-  body.no-cursor a, body.no-cursor button {
-    cursor: none
-  }
-  
-  ::selection {
-    background-color: rgba(0, 0, 0, .1)
-  }
-  
-  .f-jp {
-    font-family: dnp-shuei-mincho-pr6n, serif
-  }
-  
-  
-  .siteHeader {
-    position: fixed;
-    /* z-index: 10; */
-    left: 10;
-    top: 0;
-    background-color: var(--c-bg)
-  }
-  
-  @media not all and (min-width: 640px) {
-    .siteHeader {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      height: 50px;
-      padding: 0 var(--margin);
-      border-bottom: 1px solid var(--c-border)
-    }
-  }
-  
-  @media(min-width: 640px) {
-    .siteHeader {
-      width: 50px;
-      height: 100%;
-      border-right: 1px solid var(--c-border)
-    }
-  }
-  
-  .siteHeader_title {
-    font-size: var(--fs-text-lg)
-  }
-  
-  @media(min-width: 640px) {
-    .siteHeader_title {
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform-origin: 0% 100%;
-      transform: translate(34px, 18px) rotate(-90deg);
-      white-space: nowrap
-    }
-  }
-  
-  @media not all and (min-width: 640px) {
-    .siteHeader_desc {
-      display: none
-    }
-  }
-  
-  @media(min-width: 640px) {
-    .siteHeader_desc {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      transform-origin: 0% 100%;
-      transform: translate(33px, calc(var(--vh) * -4)) rotate(-90deg);
-      white-space: nowrap
-    }
-  }
-  
-  .siteHeader_menuBtn {
-    position: relative;
-    transition-property: background-color;
-    transition-duration: .2s;
-    transition-timing-function: cubic-bezier(0.3, 0.1, 0.1, 1)
-  }
-  
-  @media not all and (min-width: 640px) {
-    .siteHeader_menuBtn::before {
-      content: "";
-      display: block;
-      position: absolute;
-      left: -10px;
-      top: -19px;
-      width: calc(100% + 20px);
-      height: calc(100% + 38px)
-    }
-  }s
-  
-  @media(min-width: 640px) {
-    .siteHeader_menuBtn {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: calc(var(--vh)*10);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-bottom: 1px solid rgba(34, 34, 34, .25)
-    }
-  }
-  
-  
-  .siteHeader_menuBtn .shape {
-    position: relative;
-    width: 30px;
-    height: 12px
-  }
-  
-  .siteHeader_menuBtn .line {
-    position: absolute;
-    left: 0;
-    height: 2px;
-    background-color: currentColor
-  }
-  
-  .siteHeader_menuBtn .line-top {
-    top: 0;
-    width: 100%
-  }
-  
-  .siteHeader_menuBtn .line-center {
-    top: calc(50% - 1px);
-    width: 75%
-  }
-  
-  .siteHeader_menuBtn .line-bottom {
-    bottom: 0;
-    width: 50%
-  }
-  
+.navbar {
+  background-color: #333;
+  color: white;
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  transition: left 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+}
+
+.vertical-text {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  margin: 20px 0;
+}
+
+.menu-items {
+  display: none;
+  flex-direction: column;
+}
+
+.menu-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.content {
+  margin-left: 260px;
+  padding: 20px;
+}
