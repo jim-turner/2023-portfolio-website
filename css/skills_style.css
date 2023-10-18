@@ -156,7 +156,7 @@
       width: calc(100% + 20px);
       height: calc(100% + 38px)
     }
-  }
+  }s
   
   @media(min-width: 640px) {
     .siteHeader_menuBtn {
