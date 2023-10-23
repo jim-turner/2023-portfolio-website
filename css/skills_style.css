@@ -104,7 +104,7 @@ main {
   text-align: center;
   color: var(--text-secondary);
   background: var(--bg-secondary);
-  font-size: 1.5rem;
+  font-size: .75rem;
   letter-spacing: 0.3ch;
   width: 100%;
 }
@@ -114,8 +114,7 @@ main {
   transition: var(--transition-speed);
 }
 
-.logo-text
-{
+.logo-text {
   display: inline;
   position: absolute;
   left: -999px;
@@ -167,13 +166,11 @@ main {
     display: inline;
   }
 
-  .navbar:hover .logo svg
-  {
+  .navbar:hover .logo svg {
     margin-left: 11rem;
   }
 
-  .navbar:hover .logo-text
-  {
+  .navbar:hover .logo-text {
     left: 0px;
   }
 }
@@ -217,19 +214,28 @@ main {
 
 
 
-main.grid {
+photos.grid {
   display: grid;
   grid-gap: 20px;
-  margin: 30px 10px;
   align-items: center;
   justify-content: center;
   align-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* Use a flexible grid */
+  margin: 80px;
 }
 
-main.grid img {
-  max-width: 100%;
-  height: auto;
+
+img {
+
   border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  /* Ensure the image doesn't exceed the grid item width */
+  max-height: 100%;
+  /* Ensure the image doesn't exceed the grid item height */
+  width: auto;
+  /* Allow the image to shrink while maintaining its aspect ratio */
+  height: auto;
+  /* Allow the image to shrink while maintaining its aspect ratio */
 }
